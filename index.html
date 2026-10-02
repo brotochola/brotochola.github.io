@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brotochola — Web Game Engineer & Interactive Systems</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Brotochola</div>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Web Game Engineer</h1>
+      <p class="hero-subtitle">I build high-performance 2D web games, game engines, physics systems, and interactive audio tools.</p>
+      <p class="hero-description">Specializing in browser-native architecture, WebWorkers, WASM physics, and expressive real-time systems.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work -->
+  <section class="work" id="work">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- WeedJS -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>🌱 WeedJS</h3>
+            <p class="project-subtitle">Multithreaded 2D Web Game Engine</p>
+          </div>
+          <p class="project-description">
+            A custom game engine built for high-entity-count browser games. Designed around Web Workers, SharedArrayBuffer state, Box2D 3.0 WASM physics, and PixiJS rendering on OffscreenCanvas.
+          </p>
+          <ul class="project-features">
+            <li>20K+ entity simulations</li>
+            <li>6 specialized worker threads</li>
+            <li>Box2D + LiquidFun physics</li>
+            <li>WebGPU compute layers</li>
+            <li>Complete ECS architecture</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://multithreaded-game-engine.vercel.app/demos" target="_blank" class="link">Live Demo →</a>
+            <a href="https://github.com/brotochola/Web-Engine-for-Enhanced-Dynamics" target="_blank" class="link">GitHub →</a>
+          </div>
+        </div>
+
+        <!-- modular_synth -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>🎹 modular_synth</h3>
+            <p class="project-subtitle">Browser Modular Synthesizer</p>
+          </div>
+          <p class="project-description">
+            A fully-featured modular synthesizer built with WebAudio. 40+ modules for sound design, creative patching, live performance, and real-time audio experimentation.
+          </p>
+          <ul class="project-features">
+            <li>40+ modules (oscillators, filters, effects)</li>
+            <li>Real-time audio graph patching</li>
+            <li>AudioWorklet DSP</li>
+            <li>Image-to-audio I/O</li>
+            <li>Multi-user collaboration</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://modular-web-synth-rosy.vercel.app/" target="_blank" class="link">Live Synth →</a>
+            <a href="https://github.com/brotochola/modular_synth" target="_blank" class="link">GitHub →</a>
+          </div>
+        </div>
+
+        <!-- Box2D + LiquidFun -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>⚙️ Box2D 3.2 + LiquidFun</h3>
+            <p class="project-subtitle">Physics Engine Integration</p>
+          </div>
+          <p class="project-description">
+            A custom C/WASM integration bringing Box2D 3.0 and LiquidFun particle fluids into a single multithreaded runtime optimized for browser games.
+          </p>
+          <ul class="project-features">
+            <li>Box2D 3.0 C rewrite</li>
+            <li>LiquidFun particle fluids</li>
+            <li>Multithreaded WASM (pthreads + SIMD)</li>
+            <li>Compound colliders</li>
+            <li>SharedArrayBuffer ready</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/brotochola/Box2d_3.2_C_-_liquidfun" target="_blank" class="link">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stack Section -->
+  <section class="stack" id="stack">
+    <div class="container">
+      <h2>Technical Stack</h2>
+      <div class="stack-grid">
+        <div class="stack-category">
+          <h3>Languages</h3>
+          <ul>
+            <li>JavaScript / TypeScript</li>
+            <li>C / C17</li>
+            <li>HTML / CSS</li>
+            <li>WGSL (WebGPU)</li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h3>Graphics & Rendering</h3>
+          <ul>
+            <li>WebGL</li>
+            <li>PixiJS</li>
+            <li>WebGPU</li>
+            <li>Canvas 2D</li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h3>Audio & Synthesis</h3>
+          <ul>
+            <li>WebAudio API</li>
+            <li>AudioWorklet</li>
+            <li>Web Audio Parameters</li>
+            <li>Real-time DSP</li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h3>Performance & Threading</h3>
+          <ul>
+            <li>Web Workers</li>
+            <li>SharedArrayBuffer</li>
+            <li>Multithreaded architecture</li>
+            <li>WASM (Emscripten)</li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h3>Physics & Simulation</h3>
+          <ul>
+            <li>Box2D 3.0</li>
+            <li>LiquidFun</li>
+            <li>Spatial hashing</li>
+            <li>Procedural generation</li>
+          </ul>
+        </div>
+        <div class="stack-category">
+          <h3>Browser APIs</h3>
+          <ul>
+            <li>WebRTC / PeerJS</li>
+            <li>Firestore</li>
+            <li>IndexedDB</li>
+            <li>Service Workers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Projects -->
+  <section class="other-projects">
+    <div class="container">
+      <h2>Additional Experiments</h2>
+      <p class="section-description">Game mechanics, rendering techniques, procedural systems, and interactive prototypes.</p>
+      <div class="projects-list">
+        <a href="https://github.com/brotochola/destructible_terrain_2d" target="_blank" class="project-item">
+          <span class="project-name">Destructible Terrain</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="https://github.com/brotochola/gpu_boids" target="_blank" class="project-item">
+          <span class="project-name">GPU Boids (10K+)</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="https://github.com/brotochola/2.5D_Football" target="_blank" class="project-item">
+          <span class="project-name">2.5D Football</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="https://github.com/brotochola/isometric_map_maker" target="_blank" class="project-item">
+          <span class="project-name">Isometric Map Maker</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="https://github.com/brotochola/background_remove_webgpu" target="_blank" class="project-item">
+          <span class="project-name">Background Removal (WebGPU)</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="https://github.com/brotochola/auto-lipsync-speech-synth" target="_blank" class="project-item">
+          <span class="project-name">Auto Lipsync Speech Synth</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="https://github.com/brotochola/ecosystem_simulator" target="_blank" class="project-item">
+          <span class="project-name">Ecosystem Simulator</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="https://github.com/brotochola?tab=repositories" target="_blank" class="project-item">
+          <span class="project-name">+ 20 more on GitHub</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Let's Work Together</h2>
+      <p class="section-description">I'm open to game development, engine work, physics-heavy projects, audio systems, and creative coding challenges.</p>
+      <div class="contact-links">
+        <a href="https://github.com/brotochola" target="_blank" class="contact-btn">GitHub</a>
+        <a href="https://github.com/brotochola" target="_blank" class="contact-btn">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Building performant, expressive systems for the web — where games, simulation, and creative tools meet.</p>
+      <p class="footer-meta">© 2024 Brotochola. All projects open source on GitHub.</p>
+    </div>
+  </footer>
+</body>
+</html>
